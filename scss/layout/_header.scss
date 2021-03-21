@@ -1,0 +1,259 @@
+.navbar{
+  background-color: $default-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  a{
+    font-weight: 600;
+  }
+  .navbar-brand{
+    margin-right: 20px;
+  }
+  .Contact{
+    padding: 10px 20px;
+    border-left: 1px solid #cecece;
+    line-height: 30px;
+    margin: 10px 0px;
+  }
+}
+
+.store {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  img{
+    margin-top: 5px;
+    margin-right: 13px;
+  }
+}
+div#navbarDefault {
+  text-align: center;
+  margin: 0 auto;
+}
+.navbar-nav {
+  margin: 0 auto;
+  .nav-item{
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 50px;
+  }
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+// Slider_imge_section
+  .slider_img {
+    background: url(../images/slider_bg.png) 0 0 no-repeat;
+    min-height: 470px;
+    margin-top: 70px;
+    position: relative;
+    h2{
+      font-size: 2.5rem;
+      padding-top: 120px !important;
+      margin-bottom: 15px;
+    }
+    h2, h4{
+      color:$default-white !important;
+      text-align: center;
+      
+    }
+    h4{
+      font-weight: 400;
+      width: 48%;
+      margin: 0 auto;
+    }
+    .img_black_gift{
+      img{
+        position: absolute;
+        left: 220px;
+        top: 188px;
+        width: 150px;
+        filter: drop-shadow(4px 6px 15px rgba(0,0,0,0.5));
+      }
+    }
+    .img_red_gift{
+      img{
+        position: absolute;
+        right: 142px;
+        top: 250px;
+        width: 230px;
+        filter: drop-shadow(4px 6px 15px rgba(0,0,0,0.5));
+      }
+    }
+    .newsletter{
+      margin-top:50px;
+      text-align: center;
+      h5{
+        color:$default-white;
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      .btn{
+        position: absolute;
+        right: 5px;
+      }
+     
+      .input-group{
+        background:$default-white;
+        padding: 5px;
+        width: 350px;
+        margin:0 auto;
+        border-radius: 50px;
+        position: relative;
+        text-align: left;
+        .form-control{
+          border: none;
+          padding: 10px;
+          background:transparent;
+          width: 100%;
+        }
+        .form-control:focus{
+          outline:none;
+        }
+
+      }
+  }
+}
+
+.desktop-only{
+  display: block!important;
+}
+.mobile-only{
+  display: none!important;
+}
+
+@media (min-width: 1200px){
+  .slider_img {
+    background-size: 1350px;
+  }
+}
+
+//Mobile
+@media (max-width: 768px){
+  // Slider_image_style
+  .slider_img {
+    background: url(../images/mobile_bg.png) 0 0 repeat-x $color-primary;
+    margin-top: 60px;
+    padding: 25px;
+    min-height: auto;
+    h2, h4 {
+      text-align: left; 
+    }
+    h4{
+    padding: 0px 55px 0 0 !important;
+    margin-bottom: 20px;
+    width: 100%;
+    }
+   h2{
+    font-size: 2rem;
+    padding: 0px !important;
+  }
+  .alert {
+    padding: 7px 10px;
+    border-radius: 10px;
+    width: 145px;
+    box-shadow: 0 5px 0px #761737;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 73px;
+    p{
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .fa-caret-right {
+      position: absolute;
+      right: 8px;
+      top:45%;
+  }
+    h5{
+      font-size: 25px;
+      font-weight: 400;
+      color:$default-white;
+    }
+  }
+  .alert-red{
+    background-color: $color-red;
+    color: $default-white;
+  }
+  .img_gift_mobile{
+    margin-top:65px;
+    float: right;
+  }
+  .discount_mobile {
+    float: left;
+}
+  }
+ 
+  .desktop-only{
+    display: none!important;
+  }
+  .mobile-only{
+    display: block!important;
+  }
+  //Mobile Menu
+  .navbar-toggler{
+    color: $color-primary;
+    border: 0;
+    background: none;
+    &:focus{
+      outline: 0;
+    }
+    i{
+      font-size: 27px;
+    }
+    span{
+      font-size: 9px;
+      display: block;
+    }
+  }
+  .navbar-collapse{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background: $color-primary;
+    width: 100%!important;
+    .navbar-nav .nav-item {
+        display: block;
+        padding: 0 20px;
+        width: 100%;
+        a {
+            float: none;
+            display: block;
+            color: $default-white;
+            text-align: left;
+            i{
+              float: right;
+              position: relative;
+              top: 15px;
+            }
+        }
+    }
+    &.collapse{
+      display: block;
+    }
+  }
+  .navbar {
+    padding:0 6px;
+    .navbar-brand {
+      padding: 9px 0 0;
+      margin: 0 auto;
+      display: inline-block;
+      text-align: center;
+  }
+}
+  .store {
+    padding: 12px 10px 10px 0;
+    a.btn{
+      background: $color-green;
+      border:2px solid $color-border-green;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.section3{
+  background:#effcff;
+}
+.group{
+  font-size: 12px;
+  margin-bottom: 20px;
+  .badge-male{
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+    }
+    .badge-female{
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      text-align: right;
+    }
+}
+.gender{
+  margin-bottom: 20px;
+}
+.statistics{
+    h4{
+    font-size: 13px;
+    line-height: 28px;
+  }
+}
+.gender{
+    span{
+    padding: 5px 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+.male_female_img{
+  top: 510px;
+}
+.statistics{
+  top:860px;
+  h4{
+      font-size: 16px;
+      line-height: 5px;
+      margin-top: 28px;
+  }
+}
+.gender{
+  text-align: center !important;
+}
+.group .badge-male, .group .badge-female{
+  padding: 7px 10px;
+  font-size: 13px;
+}
+}

@@ -1,0 +1,5 @@
+@charset "UTF-8";
+// 1. general-section
+@import 'layout/general', 'layout/header';
+// 2. section
+@import 'section/section2', 'section/section3', 'section/section4';
